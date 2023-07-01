@@ -1,0 +1,37 @@
+body {
+font-family : "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#one {
+position : fixed;
+bottom : 10px;
+right : 10px;
+width : 25%;
+border : blue solid 3px;
+}
+#two {
+position : fixed;
+right : 10px;
+width : 25%;
+border : green solid 3px;
+}
+#three {
+position : fixed;
+width : 25%;
+border : orange solid 3px;
+}
+#four {
+position : fixed;
+width : 25%;
+border : yellow solid 3px;
+bottom : 10px;
+}
+#link a {
+font-family : "helvetica neue", Helvetica, Arial, sans-serif;
+position : fixed;
+outline : none;
+text-decoration : none;
+left : 50%;
+top : 10px;
+color : #fefefe;
+background-color : #354eb1;
+}

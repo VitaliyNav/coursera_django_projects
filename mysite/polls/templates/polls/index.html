@@ -1,0 +1,37 @@
+
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+ <link href="/site/css/blocks1.css" rel="stylesheet" type="text/css">
+</head>
+<body bgcolor="#11151e">
+<nav>
+    <div id="underline"></div>
+{% if latest_question_list %}
+    <ul>
+    {% for question in latest_question_list %}
+        <a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
+
+</nav>
+<script>
+        const underline = document.querySelector('#underline');
+        const menu = document.querySelector('nav');
+
+        menu.addEventListener ('mouseover', e => {
+        if (e.target.nodeName == 'A') {
+            underline.style.left = e.target.offsetLeft + 'px';
+            underline.style.width = e.target.offsetWidth + 'px';
+        }
+     });
+
+    </script>
+</body>
